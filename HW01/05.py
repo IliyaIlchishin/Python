@@ -14,16 +14,13 @@ def DistanceBTWCoordinates (a,b):
     length = ((b[0] - a[0]) ** 2 + (b[1] - a[1]) ** 2) ** (0.5)
     return int(length)
 
-
 a = Input_Coordinates()
 b = Input_Coordinates()
 length = DistanceBTWCoordinates(a,b)
 
 print(length)
 
-
 # Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
 # Пример:
 # - A (3,6); B (2,1) -> 5,10
 # - A (7,-5); B (1,-1) -> 7,2
-
