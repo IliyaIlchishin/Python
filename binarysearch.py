@@ -17,10 +17,15 @@ lstNumbers = [random.randint(-200, 200) for i in range(25)]
 print(lstNumbers)
 sortedList = sorted(lstNumbers)
 print (sortedList)
-even = list(map(int,filter(lambda x: not x%2 and x > 50 and x<100 ,sortedList)))
-print(even)
+
+even = list(map(int,filter(lambda x: not x%2,sortedList)))
+print(f'Четные - {even}')
    
 searchnum = 10
+
+Search = BinarySearch(sortedList,searchnum)
+print(Search)
+
 
 # result = BinarySearch(sortedList,searchnum)
 # print(result)
