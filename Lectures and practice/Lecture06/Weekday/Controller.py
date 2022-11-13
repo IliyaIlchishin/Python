@@ -1,5 +1,11 @@
 import Today as td
 import DayInput as DI
+import Plans as pl
 
-day = td.today(DI.weekday)
-print(day)
+def start():
+    day = DI.weekday()
+    TheDay = td.today(day)
+    print(TheDay)
+
+    plan = pl.plans(TheDay)
+    print(plan)
