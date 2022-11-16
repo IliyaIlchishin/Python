@@ -26,7 +26,3 @@ def calculate(lst):
     return round(result,2)
 
 
-
-a = input.inputdata
-lst = input.parse(a)
-print(lst)

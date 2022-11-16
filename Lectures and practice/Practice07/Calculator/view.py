@@ -1,13 +1,21 @@
 import calculation as calc
 import input
+import logging as log
+
 
 def collect_and_result():
+    global a
     a = input.inputdata()
     lst = input.parse(a)
-    result = calc.calculate(lst)
+    res = calc.calculate(lst)
     
-    return result
+    return res
 
 
-result = collect_and_result
-print(str(result))
+def res_print(res):
+    print(f" {a} = {res}")
+
+
+
+
+

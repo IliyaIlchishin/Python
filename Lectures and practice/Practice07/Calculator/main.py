@@ -1,5 +1,9 @@
-import view
+import view 
 import input
+import calculation
+import logging
 
-res = view.collect_and_result()
-print(f"{input.x} = {res}")
+
+view.res_print(view.collect_and_result())
+
+
