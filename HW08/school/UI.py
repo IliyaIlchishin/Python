@@ -22,13 +22,12 @@ def WorkingMode():
 
     if a == 2:
         print('Выберите режим работы:')
-        mode = int(input('1 - найти студента по фамилии, 2 - посмотреть оценки, 3 - выйти из программы '))
+        mode = int(input('1 - найти студента по фамилии, 2 - выйти из программы '))
         if mode == 1:
-            print(0)
+            STDB.StudentSearch(STDB.students_DB)
+            print()
         if mode == 2:
-            print(0)
-        if mode == 3: 
-            print(0)
+            print('До свидания!')
 
 
 WorkingMode()
